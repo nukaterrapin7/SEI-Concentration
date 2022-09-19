@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-image: url(https://i.imgur.com/mNM168T.jpg);
 }
 
 #board {
@@ -8,14 +9,10 @@ body {
     margin: auto;
 }
 
-.square {
+.tile {
     display: inline-block;
     border: 1px solid black;
     width: 32%;
     height: 32%;
     vertical-align: top;
-}
-
-#message-box {
-    height: 75px;
 }

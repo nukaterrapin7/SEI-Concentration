@@ -5,7 +5,7 @@ const WIN
 let board, winner
 
 /*---Cached Elements---*/
-const startBtnEl = document.querySelector('sButton');
+const startBtnEl = document.querySelector('');
 const resetBtnEl = document.querySelector('rButton');
 const boardEl = document.getElementById('board');
 
