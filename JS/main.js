@@ -1,5 +1,11 @@
 /*---Constants---*/
 const WIN
+const cardArr = [
+    {
+        name: 'Uranus',
+        img: card.uranus
+    }
+]
 
 /*---Variables---*/
 let board, winner

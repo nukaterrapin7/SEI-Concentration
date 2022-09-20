@@ -2,17 +2,110 @@ body {
     text-align: center;
     background-image: url(https://i.imgur.com/mNM168T.jpg);
 }
+h1 {
+    color: rgb(178, 225, 69);
+}
+
+.button {
+    background-color: green;
+}
 
 #board {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: auto;
 }
 
-.tile {
+.card {
+    box-sizing: border-box;
     display: inline-block;
-    border: 1px solid black;
-    width: 32%;
-    height: 32%;
-    vertical-align: top;
+    margin: 5px 5px 50px 5px;
+    cursor: pointer;
+    font-size: inherit;
+    width: 4.0em;
+    height: 5.5em;
+    background-color: #fff;
+    border-radius: 0.20em;
+    border: 1px solid #c3c3c3;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
+.card.back {
+    background-image: url("https://i.imgur.com/ohdH1EJ.png"); }
+
+.card.uranus {
+    background-image: url("https://i.imgur.com/Ce69cP6.png"); }
+
+.card.sun {
+    background-image: url("https://i.imgur.com/k5Ppk96.png"); }
+
+.card.star {
+    background-image: url("https://i.imgur.com/icgIXc0.png"); }
+
+.card.solar {
+    background-image: url("https://i.imgur.com/dNtAsOE.png"); }
+
+.card.saturn {
+    background-image: url("https://i.imgur.com/40dGITy.png"); }
+
+.card.rocket {
+    background-image: url("https://i.imgur.com/4MkzMpy.png"); }
+
+.card.neptune {
+    background-image: url("https://i.imgur.com/EQNGsep.png"); }
+
+.card.moon {
+    background-image: url("https://i.imgur.com/j7W8v6c.png"); }
+
+.card.mercury {
+    background-image: url("https://i.imgur.com/ZNFboCn.png"); }
+
+.card.mars {
+    background-image: url("https://i.imgur.com/90jtGGN.png"); }
+
+.card.jupiter {
+    background-image: url("https://i.imgur.com/PSnoJ4N.png"); }
+
+.card.earth {
+    background-image: url("https://i.imgur.com/8i227u2.png"); }
+
+.card.telescope {
+    background-image: url("https://i.imgur.com/TVqHf1V.png"); }
+
+.card.satellite {
+    background-image: url("https://i.imgur.com/tY1ZX9O.png"); }
+
+.card.observatory {
+    background-image: url("https://i.imgur.com/dB604wG.png"); }
+
+.card.galaxy {
+    background-image: url(""); }
+
+.card.comet {
+    background-image: url(""); }
+
+.card.alien {
+    background-image: url(""); }
+
+.card.satellite {
+    background-image: url(""); }
+
+.card.satellite {
+    background-image: url(""); }
+
+.card.satellite {
+    background-image: url(""); }
+
+.card.satellite {
+    background-image: url(""); }
+
+.card.satellite {
+    background-image: url(""); }
+
+.card.satellite {
+    background-image: url(""); }
