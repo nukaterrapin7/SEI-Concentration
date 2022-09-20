@@ -11,9 +11,9 @@ const cardArr = [
 let board, winner
 
 /*---Cached Elements---*/
-const startBtnEl = document.querySelector('');
-const resetBtnEl = document.querySelector('rButton');
-const boardEl = document.getElementById('board');
+let startBtnEl = document.querySelector('');
+let resetBtnEl = document.querySelector('rButton');
+let boardEl = document.getElementById('board');
 
 /*---Event Listeners---*/
 startBtnEl.addEventListener('click', handleStartClick);
