@@ -1,5 +1,6 @@
+/*--- Constants---*/
 const board = document.querySelector('.board');
-const tileArr = [
+const tileArrOne = [
     {name: 'Alien', img: 'images/Alien.png'},
     {name: 'Alien', img: 'images/Alien.png'},
     {name: 'Astronaut', img: 'images/Astronaut.png'},
@@ -9,11 +10,11 @@ const tileArr = [
     {name: 'Black Hole', img: 'images/Black Hole.png'},
     {name: 'Black Hole', img: 'images/Black Hole.png'},
     {name: 'Comet', img: 'images/Comet.png'},
-    {name: 'Comet', img: 'images/Comet.png' },
+    {name: 'Comet', img: 'images/Comet.png'},
     {name: 'Earth', img: 'images/Earth.png'},
     {name: 'Earth', img: 'images/Earth.png'},
-    {name: 'Galaxy', img: 'images/Galaxy.png' },
-    {name: 'Galaxy', img: 'images/Galaxy.png' },
+    {name: 'Galaxy', img: 'images/Galaxy.png'},
+    {name: 'Galaxy', img: 'images/Galaxy.png'},
     {name: 'ISS', img: 'images/ISS.png'},
     {name: 'ISS', img: 'images/ISS.png'},
     {name: 'Jupiter', img: 'images/Jupiter.png'},
@@ -49,33 +50,33 @@ const tileArr = [
     {name: 'Uranus', img: 'images/Uranus.png'},
     {name: 'Uranus', img: 'images/Uranus.png'}
 ];
+
+/*---Cached Elements---*/
 var tilesPicked = [];
 var tilesPickedId = [];
 var tilesMatched = [];
 
-
-/*---Cached Elements---*/
-let startBtnEl = button.start
-
 // let resetBtnEl = document.querySelector('rButton');
 // let boardEl = document.getElementById('board');
+const resetBtnEl = document.getElementById('reset');
 
 /*---Event Listeners---*/
-startBtnEl.addEventListener('click', createBoard());
-// resetBtnEl.addEventListener('click', handleResetClick);
+// startBtnEl.addEventListener('click', createBoard());
 // boardEl.addEventListener('click', handleBoardClick);
+resetBtnEl.addEventListener('click', handleResetClick);
 
 
+/*---Functions---*/
 
-tileArr.sort(() => 0.5 - Math.random());
-
-function createBoard() {
-    for (let i = 0; i < tileArr.length; i++) {
+function init() {
+    for (let i = 0; i < tileArrOne.length; i++) {
         var tile = document.createElement('img')
         tile.setAttribute('src', 'images/card back.png')
         tile.setAttribute('data-id', i)
         tile.addEventListener('click', flip)
         board.appendChild(tile)
+        tileArrOne.sort(() => 0.5 - Math.random());
+
     }
 };
 
@@ -95,12 +96,16 @@ function checkMatch() {
 
 function flip() {
     var tileID = this.getAttribute('data-id')
-    tilesPicked.push(tileArr[tileID].name)
+    tilesPicked.push(tileArrOne[tileID].name)
     tilesPickedId.push(tileID)
-    this.setAttribute('src', tileArr[tileID].img)
-    if (tilesPicked.length ===2) {
+    this.setAttribute('src', tileArrOne[tileID].img)
+    if (tilesPicked.length === 2) {
         setTimeout(checkMatch, 800)
     }
 };
 
-// createBoard()
+function handleResetClick() {
+    init()
+};
+
+init();
