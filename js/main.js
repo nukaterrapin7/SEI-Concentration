@@ -80,6 +80,8 @@ function checkMatch() {
     const secondPick = tilesPickedId[1]
     if (tilesPicked[0] === tilesPicked[1]) {
         tilesMatched.push(tilesPicked)
+        tiles[firstPick].setAttribute('src', 'images/card back.png')
+        tiles[secondPick].setAttribute('src', 'images/card back.png')   
     } else {
         tiles[firstPick].setAttribute('src', 'images/card back.png')
         tiles[secondPick].setAttribute('src', 'images/card back.png')
@@ -98,7 +100,16 @@ function flip() {
     }
 };
 
+// function checkForWin() {
+//     if (tilesMatched === tileArrOne) {
+
+//     }
+// }
+
 function handleResetClick() {
+    let tilesPicked = [];
+    let tilesPickedId = [];
+    let tilesMatched = [];
     init()
 };
 
