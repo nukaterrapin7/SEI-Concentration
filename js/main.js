@@ -1,54 +1,54 @@
 /*--- Constants---*/
 const board = document.querySelector('.board');
 const tileArrOne = [
-    {name: 'Alien', img: 'images/Alien.png'},
-    {name: 'Alien', img: 'images/Alien.png'},
-    {name: 'Astronaut', img: 'images/Astronaut.png'},
-    {name: 'Astronaut', img: 'images/Astronaut.png'},
-    {name: 'Big Dipper', img: 'images/Big Dipper.png'},
-    {name: 'Big Dipper', img: 'images/Big Dipper.png'},
-    {name: 'Black Hole', img: 'images/Black Hole.png'},
-    {name: 'Black Hole', img: 'images/Black Hole.png'},
-    {name: 'Comet', img: 'images/Comet.png'},
-    {name: 'Comet', img: 'images/Comet.png'},
-    {name: 'Earth', img: 'images/Earth.png'},
-    {name: 'Earth', img: 'images/Earth.png'},
-    {name: 'Galaxy', img: 'images/Galaxy.png'},
-    {name: 'Galaxy', img: 'images/Galaxy.png'},
-    {name: 'ISS', img: 'images/ISS.png'},
-    {name: 'ISS', img: 'images/ISS.png'},
-    {name: 'Jupiter', img: 'images/Jupiter.png'},
-    {name: 'Jupiter', img: 'images/Jupiter.png'},
-    {name: 'Mars', img: 'images/Mars.png'},
-    {name: 'Mars', img: 'images/Mars.png'},
-    {name: 'Mercury', img: 'images/Mercury.png'},
-    {name: 'Mercury', img: 'images/Mercury.png'},
-    {name: 'Moon', img: 'images/Moon.png'},
-    {name: 'Moon', img: 'images/Moon.png'},
-    {name: 'Neptune', img: 'images/Neptune.png'},
-    {name: 'Neptune', img: 'images/Neptune.png'},
-    {name: 'Observatory', img: 'images/Observatory.png'},
-    {name: 'Observatory', img: 'images/Observatory.png'},
-    {name: 'Rocket Ship', img: 'images/Rocket Ship.png'},
-    {name: 'Rocket Ship', img: 'images/Rocket Ship.png'},
-    {name: 'Satellite', img: 'images/Satellite.png'},
-    {name: 'Satellite',  img: 'images/Satellite.png'},
-    {name: 'Saturn', img: 'images/Saturn.png'},
-    {name: 'Saturn', img: 'images/Saturn.png'},
-    {name: 'Solar System', img: 'images/Solar System.png'},
-    {name: 'Solar System', img: 'images/Solar System.png'},
-    {name: 'Space Rover', img: 'images/Space Rover.png'},
-    {name: 'Space Rover', img: 'images/Space Rover.png'},
-    {name: 'Star', img: 'images/Star.png'},
-    {name: 'Star', img: 'images/Star.png'},
-    {name: 'Sun', img: 'images/Sun.png'},
-    {name: 'Sun', img: 'images/Sun.png'},
-    {name: 'Telescope', img: 'images/Telescope.png'},
-    {name: 'Telescope', img: 'images/Telescope.png'},
-    {name: 'UFO', img: 'images/UFO.png'},
-    {name: 'UFO', img: 'images/UFO.png'},
-    {name: 'Uranus', img: 'images/Uranus.png'},
-    {name: 'Uranus', img: 'images/Uranus.png'}
+    {name: 'alien', img: 'images/alien.png'},
+    {name: 'alien', img: 'images/alien.png'},
+    {name: 'astronaut', img: 'images/astronaut.png'},
+    {name: 'astronaut', img: 'images/astronaut.png'},
+    {name: 'big-dipper', img: 'images/big-dipper.png'},
+    {name: 'big-dipper', img: 'images/big-dipper.png'},
+    {name: 'black-hole', img: 'images/black-hole.png'},
+    {name: 'black-hole', img: 'images/black-hole.png'},
+    {name: 'comet', img: 'images/comet.png'},
+    {name: 'comet', img: 'images/comet.png'},
+    {name: 'earth', img: 'images/earth.png'},
+    {name: 'earth', img: 'images/earth.png'},
+    {name: 'galaxy', img: 'images/galaxy.png'},
+    {name: 'galaxy', img: 'images/galaxy.png'},
+    {name: 'iss', img: 'images/iss.png'},
+    {name: 'iss', img: 'images/iss.png'},
+    {name: 'jupiter', img: 'images/jupiter.png'},
+    {name: 'jupiter', img: 'images/jupiter.png'},
+    {name: 'mars', img: 'images/mars.png'},
+    {name: 'mars', img: 'images/mars.png'},
+    {name: 'mercury', img: 'images/mercury.png'},
+    {name: 'mercury', img: 'images/mercury.png'},
+    {name: 'moon', img: 'images/moon.png'},
+    {name: 'moon', img: 'images/moon.png'},
+    {name: 'neptune', img: 'images/neptune.png'},
+    {name: 'neptune', img: 'images/neptune.png'},
+    {name: 'observatory', img: 'images/observatory.png'},
+    {name: 'observatory', img: 'images/observatory.png'},
+    {name: 'rocket-ship', img: 'images/rocket-ship.png'},
+    {name: 'rocket-ship', img: 'images/rocket-ship.png'},
+    {name: 'satellite', img: 'images/satellite.png'},
+    {name: 'satellite',  img: 'images/satellite.png'},
+    {name: 'saturn', img: 'images/saturn.png'},
+    {name: 'saturn', img: 'images/saturn.png'},
+    {name: 'solar-system', img: 'images/solar-system.png'},
+    {name: 'solar-system', img: 'images/solar-system.png'},
+    {name: 'space-rover', img: 'images/space-rover.png'},
+    {name: 'space-rover', img: 'images/space-rover.png'},
+    {name: 'star', img: 'images/star.png'},
+    {name: 'star', img: 'images/star.png'},
+    {name: 'sun', img: 'images/sun.png'},
+    {name: 'sun', img: 'images/sun.png'},
+    {name: 'telescope', img: 'images/telescope.png'},
+    {name: 'telescope', img: 'images/telescope.png'},
+    {name: 'ufo', img: 'images/ufo.png'},
+    {name: 'ufo', img: 'images/ufo.png'},
+    {name: 'uranus', img: 'images/uranus.png'},
+    {name: 'uranus', img: 'images/uranus.png'}
 ];
 const resetBtnEl = document.getElementById('reset');
 
@@ -69,7 +69,7 @@ resetBtnEl.addEventListener('click', handleResetClick);
 function init() {
     for (let i = 0; i < tileArrOne.length; i++) {
         var tile = document.createElement('img');
-        tile.setAttribute('src', 'images/card back.png');
+        tile.setAttribute('src', 'images/card-back.png');
         tile.setAttribute('data-id', i);
         tile.addEventListener('click', flip);
         board.appendChild(tile);
@@ -91,8 +91,8 @@ function checkMatch() {
         tiles[firstPick].classList.add('pair') 
         tiles[secondPick].classList.add('pair') 
     } else {
-        tiles[firstPick].setAttribute('src', 'images/card back.png')
-        tiles[secondPick].setAttribute('src', 'images/card back.png')
+        tiles[firstPick].setAttribute('src', 'images/card-back.png')
+        tiles[secondPick].setAttribute('src', 'images/card-back.png')
     }
     tilesPicked = []
     tilesPickedId = []
