@@ -96,7 +96,7 @@ function checkMatch() {
     }
     tilesPicked = []
     tilesPickedId = []
-    // checkForWin()
+    checkForWin()
 };
 
 function flip() {
@@ -110,7 +110,7 @@ function flip() {
 };
 
 function checkForWin() {
-    if(tilesMatched === tileArrOne) {
+    if(tilesMatched.length === tileArrOne.length/2) {
         messageDisplayEl.innerText = "You matched them all! You're the best in the galaxy!"
     }
 };
