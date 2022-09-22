@@ -54,7 +54,7 @@ const resetBtnEl = document.getElementById('reset');
 
 /*---Cached Elements---*/
 let winner
-const messageDisplayEl = document.querySelector('h3');
+const messageDisplayEl = document.querySelector('h2');
 var tilesPicked = [];
 var tilesPickedId = [];
 var tilesMatched = [];

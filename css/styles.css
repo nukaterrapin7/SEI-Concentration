@@ -4,14 +4,32 @@ body {
 }
 h1 {
     color: rgb(178, 225, 69);
+    font-family: fantasy, sans-serif;
+    font-size: 40px;
 }
 
-h3 {
-    color:rgb(18, 184, 165)
+h2 {
+    color:rgb(18, 184, 165);
+    font-family: fantasy, sans-serif;
 }
 
-.reset {
-    background-color: green;
+#reset {
+    display: inline-block;
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 24px;
+    font-family: fantasy, sans-serif;
+    width: 250px;
+    transition-duration: 0.5s;
+}
+
+#reset:hover {
+    background-color: rgb(188, 54, 54);
+    color: black;
 }
 
 .board {
