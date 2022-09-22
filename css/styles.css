@@ -30,6 +30,6 @@ h3 {
     background: transparent;
 };
 
-/* .tile::after {
-    background: transparent;
-} */
+.pair {
+    pointer-events: none;
+};

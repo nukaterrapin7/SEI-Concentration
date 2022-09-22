@@ -87,13 +87,16 @@ function checkMatch() {
     if (tilesPicked[0] === tilesPicked[1] && tilesPickedId[0] !== tilesPickedId[1]) {
         tilesMatched.push(tilesPicked)
         tiles[firstPick].setAttribute('src', 'images/check-mark.png')
-        tiles[secondPick].setAttribute('src', 'images/check-mark.png')  
+        tiles[secondPick].setAttribute('src', 'images/check-mark.png')
+        tiles[firstPick].classList.add('pair') 
+        tiles[secondPick].classList.add('pair') 
     } else {
         tiles[firstPick].setAttribute('src', 'images/card back.png')
         tiles[secondPick].setAttribute('src', 'images/card back.png')
     }
     tilesPicked = []
     tilesPickedId = []
+    // checkForWin()
 };
 
 function flip() {
@@ -108,12 +111,7 @@ function flip() {
 
 function checkForWin() {
     if(tilesMatched === tileArrOne) {
-        if(!winner) {
-            messageDisplayEl.innerText = `Click tiles to make matching pairs.`
-        } else {
-            messageDisplayEl.innerText = `You matched them all! You're the best in the galaxy!`
-            // break;
-        }
+        messageDisplayEl.innerText = "You matched them all! You're the best in the galaxy!"
     }
 };
 
