@@ -50,24 +50,18 @@ const tileArrOne = [
     {name: 'Uranus', img: 'images/Uranus.png'},
     {name: 'Uranus', img: 'images/Uranus.png'}
 ];
+const resetBtnEl = document.getElementById('reset');
 
 /*---Cached Elements---*/
 var tilesPicked = [];
 var tilesPickedId = [];
 var tilesMatched = [];
 
-// let resetBtnEl = document.querySelector('rButton');
-// let boardEl = document.getElementById('board');
-const resetBtnEl = document.getElementById('reset');
-
 /*---Event Listeners---*/
-// startBtnEl.addEventListener('click', createBoard());
-// boardEl.addEventListener('click', handleBoardClick);
 resetBtnEl.addEventListener('click', handleResetClick);
 
 
 /*---Functions---*/
-
 function init() {
     for (let i = 0; i < tileArrOne.length; i++) {
         var tile = document.createElement('img')
@@ -108,4 +102,5 @@ function handleResetClick() {
     init()
 };
 
+/*---Start Game---*/
 init();

@@ -6,6 +6,10 @@ h1 {
     color: rgb(178, 225, 69);
 }
 
+h4 {
+    color:rgb(18, 184, 165)
+}
+
 .button {
     background-color: green;
 }
@@ -23,24 +27,4 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     margin: auto;
-};
-
-.card {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px 5px 50px 5px;
-    cursor: pointer;
-    font-size: inherit;
-    width: 100px;
-    height: 130px;
-    background-color: #fff;
-    border-radius: 0.20em;
-    border: 1px solid #c3c3c3;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
 };
