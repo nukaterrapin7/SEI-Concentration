@@ -6,11 +6,11 @@ h1 {
     color: rgb(178, 225, 69);
 }
 
-h4 {
+#message-box {
     color:rgb(18, 184, 165)
 }
 
-.button {
+.reset {
     background-color: green;
 }
 
@@ -27,4 +27,9 @@ h4 {
     white-space: nowrap;
     overflow: hidden;
     margin: auto;
+    background: transparent;
 };
+
+/* .tile::after {
+    background: transparent;
+} */

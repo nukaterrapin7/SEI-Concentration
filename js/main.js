@@ -53,35 +53,42 @@ const tileArrOne = [
 const resetBtnEl = document.getElementById('reset');
 
 /*---Cached Elements---*/
+let winner
+const messageDisplayEl = document.querySelector('h3 ');
 var tilesPicked = [];
 var tilesPickedId = [];
 var tilesMatched = [];
+
 
 /*---Event Listeners---*/
 resetBtnEl.addEventListener('click', handleResetClick);
 
 
 /*---Functions---*/
+
 function init() {
     for (let i = 0; i < tileArrOne.length; i++) {
-        var tile = document.createElement('img')
-        tile.setAttribute('src', 'images/card back.png')
-        tile.setAttribute('data-id', i)
-        tile.addEventListener('click', flip)
-        board.appendChild(tile)
+        var tile = document.createElement('img');
+        tile.setAttribute('src', 'images/card back.png');
+        tile.setAttribute('data-id', i);
+        tile.addEventListener('click', flip);
+        board.appendChild(tile);
         tileArrOne.sort(() => 0.5 - Math.random());
-
+        winner = null;
     }
 };
+
+init();
 
 function checkMatch() {
     var tiles = document.querySelectorAll('img')
     const firstPick = tilesPickedId[0]
     const secondPick = tilesPickedId[1]
-    if (tilesPicked[0] === tilesPicked[1]) {
+    if (tilesPicked[0] === tilesPicked[1] && tilesPickedId[0] !== tilesPickedId[1]) {
         tilesMatched.push(tilesPicked)
-        tiles[firstPick].setAttribute('src', 'images/card back.png')
-        tiles[secondPick].setAttribute('src', 'images/card back.png')   
+        tiles[firstPick].setAttribute('src', 'images/check-mark.png')
+        tiles[secondPick].setAttribute('src', 'images/check-mark.png')  
+        // break 
     } else {
         tiles[firstPick].setAttribute('src', 'images/card back.png')
         tiles[secondPick].setAttribute('src', 'images/card back.png')
@@ -96,15 +103,19 @@ function flip() {
     tilesPickedId.push(tileID)
     this.setAttribute('src', tileArrOne[tileID].img)
     if (tilesPicked.length === 2) {
-        setTimeout(checkMatch, 800)
+        setTimeout(checkMatch, 400)
     }
 };
 
-// function checkForWin() {
-//     if (tilesMatched === tileArrOne) {
-
-//     }
-// }
+function checkForWin() {
+    if(tilesMatched === tileArrOne) {
+        if(!winner) {
+            messageDisplayEl.innerText = `Click tiles to make matching pairs.`
+        } else {
+            messageDisplayEl.innerText = `You matched them all! You're the best in the galaxy!`
+        }
+    }
+};
 
 function handleResetClick() {
     let tilesPicked = [];
@@ -112,6 +123,3 @@ function handleResetClick() {
     let tilesMatched = [];
     init()
 };
-
-/*---Start Game---*/
-init();
