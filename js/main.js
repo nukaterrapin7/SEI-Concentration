@@ -54,7 +54,7 @@ const resetBtnEl = document.getElementById('reset');
 
 /*---Cached Elements---*/
 let winner
-const messageDisplayEl = document.querySelector('h3 ');
+const messageDisplayEl = document.querySelector('h3');
 var tilesPicked = [];
 var tilesPickedId = [];
 var tilesMatched = [];
@@ -88,7 +88,6 @@ function checkMatch() {
         tilesMatched.push(tilesPicked)
         tiles[firstPick].setAttribute('src', 'images/check-mark.png')
         tiles[secondPick].setAttribute('src', 'images/check-mark.png')  
-        // break 
     } else {
         tiles[firstPick].setAttribute('src', 'images/card back.png')
         tiles[secondPick].setAttribute('src', 'images/card back.png')
@@ -113,13 +112,12 @@ function checkForWin() {
             messageDisplayEl.innerText = `Click tiles to make matching pairs.`
         } else {
             messageDisplayEl.innerText = `You matched them all! You're the best in the galaxy!`
+            // break;
         }
     }
 };
 
 function handleResetClick() {
-    let tilesPicked = [];
-    let tilesPickedId = [];
-    let tilesMatched = [];
+    board.innerHTML=""
     init()
 };
