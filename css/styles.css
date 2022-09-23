@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-image: url(../images/purple-stars.jpg);
+    background-repeat: no-repeat;
 }
 h1 {
     color: rgb(178, 225, 69);

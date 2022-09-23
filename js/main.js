@@ -117,5 +117,6 @@ function checkForWin() {
 
 function handleResetClick() {
     board.innerHTML=""
+    checkForWin()
     init()
 };
