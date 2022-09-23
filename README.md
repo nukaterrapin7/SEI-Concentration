@@ -1,7 +1,5 @@
 Concentration
 
-https://nukaterrapin7.github.io/SEI-Concentration/
-
 Technologies Used:
     HTML
     CSS
