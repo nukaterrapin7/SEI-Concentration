@@ -13,6 +13,7 @@ Technologies Used:
 Getting Started:
     Click on each tile, and look for matching pairs.  
     Once pairs have been found, there will be a check mark.
+    The reset button can be used at any time to start over.
     Once all pairs have been found, you win!
 
 Next Steps:
