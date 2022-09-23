@@ -6,13 +6,13 @@ body {
 }
 h1 {
     color: rgb(178, 225, 69);
-    font-family: fantasy, sans-serif;
+    font-family: fantasy;
     font-size: 40px;
 }
 
 h2 {
     color:rgb(18, 184, 165);
-    font-family: fantasy, sans-serif;
+    font-family: fantasy;
 }
 
 #reset {
@@ -24,7 +24,7 @@ h2 {
     cursor: pointer;
     border-radius: 12px;
     font-size: 24px;
-    font-family: fantasy, sans-serif;
+    font-family: fantasy;
     width: 250px;
     transition-duration: 0.5s;
 }
